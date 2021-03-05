@@ -1,4 +1,4 @@
-#Hash Table
+# Hash Table
 
 ## Description
 
@@ -22,29 +22,30 @@ After that, a terminal should be opened in the corresponding location. Any cpp f
 to work with, and the hash table library sould be included like:
 
 ```
-\#include "HashTable.h"
+#include "HashTable.h"
 ```
 
-_Note: this library includes the "LinkedList.h" library, so it is not necessary to call it again.
+_Note_: the hash table header file includes the "LinkedList.h" library, so it is not necessary to 
+call it again.
 
-The main.cpp file in the repository can be used as a first try to see how it stores and displays the 
+The main.cpp file in the repository can be used as a first try to see how it works, stores and displays the 
 elements in the hash table. Then, the users can utilize the hash table as they want.
-The way a hash table object should be created is:
+The way a hash table object should be created is like so:
 
 _Using_ a single initial value:
 
 ```
-data type name = value;
+dataType name = value;
 
-HashTable< data type> objectName(value);
+HashTable< dataType > objectName(value);
 ```
 
 _Using_ an array of elements:
 
 ```
-data type array[] {list_of_values};
+dataType array[] {list_of_values};
 
-HashTable< data type> objectName(array, arraySize);
+HashTable< dataType > objectName(array, arraySize);
 ```
 
 ### Compile the Code for Linux
