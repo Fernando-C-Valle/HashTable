@@ -4,19 +4,7 @@
 
 int main(){
 	
-	/*Examples. The hash table by now only supports float, int, char and double data types*/
-
-	std::cout << "-----------Char Data Type-----------" << std::endl;
-	char arr[] {"Hello there, how's it going?"};
-	HashTable<char> h(arr, 29);
-	h.show();	
-	char letter {'e'};
-	std::cout << "How many " << letter << "'s are there in the hash table? " << h.occurrences(letter) << std::endl;
-	h.del('?');
-	h.insert('!');
-	std::cout << "Deleting ? and Inserting !" << std::endl;
-	h.show();
-	
+	/*Examples. The hash table by now only supports float, int, char and double data types*/	
 	
 	std::cout << "-----------Integer Data Type-----------" << std::endl;
 	int arr2[30] {100,0,0,3,2,4,6,8,2,3,1,40,50,2,3,9,43,53,24,23,22,7,67,4,5,76,89,968596,2,118};
@@ -39,7 +27,24 @@ int main(){
 	h3.insert(1.3);
 	std::cout << "Deleting 5.1 and Inserting 1.3" << std::endl;
 	h3.show();
-			
+		
+	std::cout << "-----------Char Data Type-----------" << std::endl;
+	char arr[] {"Hello there, how's it going?"};
+	HashTable<char> h(arr, 29);
+	h.show();	
+	char letter {'e'};
+	std::cout << "How many " << letter << "'s are there in the hash table? " << h.occurrences(letter) << std::endl;
+	h.del('?');
+	h.insert('!');
+	std::cout << "Deleting ? and Inserting !" << std::endl;
+	h.show();	
+		
+	//Count all
+	for(int i=97;i<=122;i++){
+		char temp = i;
+		std::cout << temp << ":" << h.occurrences(temp) << std::endl;
+	}
+
 	
 	return 0;
 }

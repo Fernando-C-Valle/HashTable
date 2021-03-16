@@ -1,0 +1,6 @@
+This is a text file to test how the hash table works when using
+multiple lines of text read from a .txt file. Please note, the 
+program is going to skip any line break or any non alphanumeric 
+character.
+
+M0r3 t3xt r1ght here, u51ng num6er5 th15 t1m3...

@@ -64,6 +64,23 @@ file name by typing its name and extension.
 
 No warnings or errors should be displayed after executing the command.
 
+# Working with Files
+
+This project can also be used to count the amount of characters in a *.txt file. The _HashTable_ data type has 
+to be _char_. The fstream library was used to open and read a file. The insertion of the characters to the hash 
+table was done using the _.insert(character)_ method.
+
+An example, is provided in _countingLetters.cpp_, which reads the _file.txt_ file and puts the letters in the hash
+table.
+
+```
+HashTable< char > name(' '); //_Initialize with any character_
+
+name.del(' '); //_After initializing the hash table, delete the inital character_
+
+name.show(); //_Use this command to display the hashed characters_
+```
+
 # Development
 
 This project was built using Linux Ubuntu 18.04 and the g++ compiler.
